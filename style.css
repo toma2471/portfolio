@@ -13,13 +13,17 @@ h2 {
   font-family: "changeling-neo", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 3rem;
   color: #eefdab;
+  line-height: 1;
 }
 h1 {
   font-family: "changeling-neo", sans-serif;
   font-weight: 700;
+  font-size: 5rem;
   font-style: normal;
   color: #eefdab;
+  line-height: 0.8;
 }
 p {
   font-family: "space-mono", mono;
@@ -28,11 +32,6 @@ p {
   color: #eefdab;
 }
 /* Menu */
-/* General Styles */
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #161614;
-}
 
 nav {
   background-color: #161614;
@@ -55,8 +54,9 @@ nav {
 /* Desktop Menu */
 .menu {
   list-style: none;
-  display: flex; /* Menu is visible on desktop */
+  display: flex;
   gap: 20px;
+  transition: all 0.3s ease;
 }
 
 .menu li a {
@@ -64,6 +64,7 @@ nav {
   color: #eefdab;
   font-size: 18px;
   transition: color 0.3s;
+  font-family: "changeling-neo", sans-serif;
 }
 
 .menu li a:hover {
@@ -88,6 +89,29 @@ nav {
   background-color: #eefdab;
   margin: 5px 0;
   transition: 0.3s;
+}
+main {
+  padding-top: 140px;
+}
+/* FORSIDA */
+.eeg {
+  object-fit: cover;
+  align-content: center;
+  display: block;
+}
+.textiforsida {
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+
+.portfolio {
+  font-family: "changeling-neo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+.nafnfor {
+  font-size: 2rem;
 }
 
 @media (max-width: 800px) {
@@ -129,5 +153,27 @@ nav {
 
   nav.active .menu a {
     font-size: 24px;
+  }
+  .eeg {
+    object-fit: cover;
+  }
+  .textiforsida {
+    font-size: 20px;
+  }
+  h2 {
+    font-family: "changeling-neo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.9rem;
+    color: #eefdab;
+    line-height: 1;
+  }
+  h1 {
+    font-family: "changeling-neo", sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    font-style: normal;
+    color: #eefdab;
+    line-height: 0.8;
   }
 }
