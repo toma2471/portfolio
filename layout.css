@@ -4,3 +4,69 @@
   padding: 0;
   box-sizing: border-box;
 }
+.forsidakassar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  line-height: 0.4;
+  margin: 50px;
+}
+.fyrsta {
+  display: flex;
+  gap: 20px;
+  margin: 50px;
+}
+.textifyrsta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  line-height: 0;
+  margin-bottom: 30px;
+}
+.textiforsida {
+  margin: 50px;
+}
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  position: relative;
+  background-color: #eefdab;
+  color: #161614;
+  overflow: hidden;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "changeling-neo", sans-serif;
+}
+
+.card img {
+  width: 100%;
+  /* height: 80%; */
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  border-bottom: 3px solid #161614;
+}
+
+.card h2 {
+  font-size: 2.5rem;
+  margin: 0.5rem 1rem 0;
+  font-family: "changeling-neo", sans-serif;
+  color: #161614;
+}
+@media (max-width: 800px) {
+  .grid-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
