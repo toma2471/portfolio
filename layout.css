@@ -60,6 +60,33 @@
   font-family: "changeling-neo", sans-serif;
   color: #161614;
 }
+/* MYNDIR HREYFAST */
+
+.hreyfimyndir {
+  width: 89rem;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.myndirh {
+  display: flex;
+  animation: markee-animation 3s linear infinite;
+}
+.myndirh {
+  width: 241px;
+  flex-shrink: 0;
+}
+
+@keyframes markee-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 @media (max-width: 800px) {
   .grid-section {
     display: grid;

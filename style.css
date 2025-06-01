@@ -9,14 +9,6 @@ body {
 }
 
 /* Font */
-h2 {
-  font-family: "changeling-neo", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 3rem;
-  color: #eefdab;
-  line-height: 1;
-}
 h1 {
   font-family: "changeling-neo", sans-serif;
   font-weight: 700;
@@ -25,6 +17,16 @@ h1 {
   color: #eefdab;
   line-height: 0.8;
 }
+
+h2 {
+  font-family: "changeling-neo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  color: #eefdab;
+  line-height: 1;
+}
+
 p {
   font-family: "space-mono", mono;
   font-weight: 400;
@@ -160,14 +162,7 @@ main {
   .textiforsida {
     font-size: 20px;
   }
-  h2 {
-    font-family: "changeling-neo", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.9rem;
-    color: #eefdab;
-    line-height: 1;
-  }
+
   h1 {
     font-family: "changeling-neo", sans-serif;
     font-weight: 700;
@@ -176,4 +171,65 @@ main {
     color: #eefdab;
     line-height: 0.8;
   }
+  h2 {
+    font-family: "changeling-neo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.9rem;
+    color: #eefdab;
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* VERKEFNA SÍDUR */
+  .tilhlidar {
+    gap: 80px;
+    margin-right: 100px;
+    margin-left: 20px;
+  }
+  .api {
+    font-family: "changeling-neo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    text-align: end;
+  }
+  .uppi {
+    margin-left: 20px;
+  }
+  .uppi4 {
+    display: flex;
+    align-items: baseline;
+  }
+  .uppitexti {
+    line-height: 1.5;
+    font-size: 1.1rem;
+  }
+  .verknofn {
+    font-size: 3.2rem;
+  }
+  .hjemme {
+    font-family: "changeling-neo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+  }
+  .nafn {
+    display: flex;
+    align-items: baseline;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 2px;
+    font-size: 3.2rem;
+    padding-left: 15px;
+    margin-bottom: 40px;
+  }
+}
+/* om mig */
+.textiommig {
+  line-height: 1.5;
+  margin-right: 45px;
+}
+.paddi {
+  padding-left: 15px;
 }
