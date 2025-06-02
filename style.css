@@ -115,6 +115,59 @@ main {
 .nafnfor {
   font-size: 2rem;
 }
+/* om mig */
+.textiommig {
+  line-height: 1.5;
+  margin-right: 45px;
+}
+.paddi {
+  padding-left: 15px;
+}
+/* VERKEFNA SÍDUR */
+.tilhlidar {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.api {
+  font-family: "changeling-neo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.1rem;
+  text-align: end;
+}
+.uppi {
+  margin-left: 20px;
+}
+.uppi4 {
+  display: flex;
+  align-items: baseline;
+}
+.uppitexti {
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+.verknofn {
+  font-size: 3.2rem;
+}
+.hjemme {
+  font-family: "changeling-neo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+.nafn {
+  display: flex;
+  align-items: baseline;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 2px;
+  font-size: 3.2rem;
+  padding-left: 15px;
+  margin-bottom: 40px;
+}
 
 @media (max-width: 800px) {
   .menu {
@@ -166,7 +219,7 @@ main {
   h1 {
     font-family: "changeling-neo", sans-serif;
     font-weight: 700;
-    font-size: 3.2rem;
+    font-size: 2.9rem;
     font-style: normal;
     color: #eefdab;
     line-height: 0.8;
@@ -179,57 +232,26 @@ main {
     color: #eefdab;
     line-height: 1;
   }
-}
-@media screen and (min-width: 600px) {
-  /* VERKEFNA SÍDUR */
+  .textiommig {
+    line-height: 1.5;
+    margin: 20px 20px;
+  }
+  .paddi {
+    padding-left: 15px;
+  }
   .tilhlidar {
-    gap: 80px;
-    margin-right: 100px;
-    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 20px;
+    margin: 0 auto;
   }
   .api {
     font-family: "changeling-neo", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 35px;
+    font-size: 2.1rem;
     text-align: end;
+    margin-right: 20px;
   }
-  .uppi {
-    margin-left: 20px;
-  }
-  .uppi4 {
-    display: flex;
-    align-items: baseline;
-  }
-  .uppitexti {
-    line-height: 1.5;
-    font-size: 1.1rem;
-  }
-  .verknofn {
-    font-size: 3.2rem;
-  }
-  .hjemme {
-    font-family: "changeling-neo", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-  }
-  .nafn {
-    display: flex;
-    align-items: baseline;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 2px;
-    font-size: 3.2rem;
-    padding-left: 15px;
-    margin-bottom: 40px;
-  }
-}
-/* om mig */
-.textiommig {
-  line-height: 1.5;
-  margin-right: 45px;
-}
-.paddi {
-  padding-left: 15px;
 }
