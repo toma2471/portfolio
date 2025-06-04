@@ -133,6 +133,33 @@
   margin-right: 710px;
 }
 
+footer {
+  background-color: #161614;
+  color: #eefdab;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #eefdab;
+  font-family: "changeling-neo", sans-serif;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #eefdab;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #d0ff00;
+  animation: glitch 1s infinite;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 @media (max-width: 800px) {
   .grid-section {
     display: grid;

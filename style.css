@@ -6,6 +6,7 @@
 }
 body {
   background-color: #161614;
+  cursor: url("img/cursor-glow.cur"), auto;
 }
 
 /* Font */
@@ -73,14 +74,20 @@ nav {
   text-decoration: none;
   color: #eefdab;
   font-size: 18px;
-  transition: color 0.3s;
+  transition: color 0.3s, text-shadow 0.3s;
   font-family: "changeling-neo", sans-serif;
 }
 
 .menu li a:hover {
   color: #d0ff00;
+  animation: glitch 1s infinite;
 }
-
+.menu li a.active {
+  color: #d0ff00;
+  font-weight: bold;
+  text-shadow: 0 0 8px #d0ff00;
+  animation: glitch 1.5s infinite;
+}
 .burger {
   display: none;
   flex-direction: column;
@@ -99,6 +106,26 @@ nav {
   background-color: #eefdab;
   margin: 5px 0;
   transition: 0.3s;
+}
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 0 #d0ff00, -2px 0 #eefdab;
+  }
+  20% {
+    text-shadow: -2px 0 #d0ff00, 2px 0 #eefdab;
+  }
+  40% {
+    text-shadow: 2px 2px #eefdab, -2px -2px #d0ff00;
+  }
+  60% {
+    text-shadow: 1px -1px #d0ff00, -1px 1px #eefdab;
+  }
+  80% {
+    text-shadow: 0 0 6px #d0ff00;
+  }
+  100% {
+    text-shadow: none;
+  }
 }
 main {
   padding-top: 140px;
