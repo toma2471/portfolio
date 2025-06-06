@@ -130,6 +130,18 @@
   margin-left: 800px;
 }
 
+.mynd1-1 {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  align-items: stretch;
+}
+
+.mynd1-1 img {
+  height: 300px;
+  object-fit: cover;
+}
+
 footer {
   background-color: #161614;
   color: #eefdab;
@@ -215,5 +227,13 @@ footer a:hover {
   .slideshow {
     position: relative;
     scroll-snap-type: x mandatory;
+  }
+  .mynd1-1 {
+    flex-direction: column;
+  }
+
+  .mynd1-1 img {
+    width: 100%;
+    height: auto;
   }
 }
