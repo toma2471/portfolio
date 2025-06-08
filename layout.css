@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .forsidakassar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -60,6 +65,25 @@
   font-family: "changeling-neo", sans-serif;
   color: #161614;
 }
+
+.temapads {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.stylemood {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2rem 1rem;
+  flex-wrap: wrap; /* makes them stack on mobile */
+}
+
+.stylemood img {
+  height: 400px;
+  object-fit: cover;
+}
 /* MYNDIR HREYFAST */
 
 .hreyfimyndir {
@@ -111,10 +135,6 @@
   gap: 15px;
 }
 
-.styletile {
-  margin-left: 700px;
-}
-
 .uppi3 {
   display: flex;
   flex-direction: column;
@@ -140,6 +160,19 @@
 .mynd1-1 img {
   height: 300px;
   object-fit: cover;
+}
+
+.lottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.lottie lottie-player {
+  width: 250px;
+  max-width: 100%;
 }
 
 footer {
@@ -235,5 +268,15 @@ footer a:hover {
   .mynd1-1 img {
     width: 100%;
     height: auto;
+  }
+  .stylemood {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stylemood img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
   }
 }
