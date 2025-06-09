@@ -190,6 +190,7 @@ main {
   grid-template-columns: 1fr 2fr;
   gap: 80px;
   padding-top: 50px;
+  padding-bottom: 30px;
   margin: 0 auto;
 }
 .api {
@@ -325,6 +326,7 @@ main {
     grid-template-columns: 1fr;
 
     padding-top: 50px;
+    padding-bottom: 30px;
     margin: 0 auto;
   }
   .textiommig {
