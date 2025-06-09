@@ -4,65 +4,74 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --bakgrunnur: #161614;
+  --texti: #eefdab;
+  --glitch: #d0ff00;
+
+  --heading: "changeling-neo", sans-serif;
+  --body: "space-mono", monospace;
+}
+
 body {
-  background-color: #161614;
-  cursor: url("img/cursor-glow.cur"), auto;
+  background-color: var(--bakgrunnur);
 }
 
 /* Font */
 h1 {
-  font-family: "changeling-neo", sans-serif;
+  font-family: var(--heading);
   font-weight: 700;
   font-size: 5rem;
   font-style: normal;
-  color: #eefdab;
+  color: var(--texti);
   line-height: 0.8;
 }
 
 h2 {
-  font-family: "changeling-neo", sans-serif;
+  font-family: var(--heading);
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
-  color: #eefdab;
+  color: var(--texti);
   line-height: 1;
 }
 h3 {
-  font-family: "changeling-neo", sans-serif;
+  font-family: var(--heading);
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
-  color: #eefdab;
+  color: var(--texti);
   line-height: 1;
 }
 
 p {
-  font-family: "space-mono", mono;
+  font-family: var(--body);
   font-weight: 400;
   font-style: normal;
-  color: #eefdab;
+  color: var(--texti);
   font-size: 1rem;
 }
 a {
-  font-family: "space-mono", mono;
+  font-family: var(--body);
   font-weight: 400;
   font-style: normal;
-  color: #eefdab;
+  color: var(--texti);
   font-size: 1rem;
   text-decoration: none;
 }
 
 a:hover {
-  color: #d0ff00;
+  color: var(--texti);
   font-weight: bold;
-  text-shadow: 0 0 8px #d0ff00;
+  text-shadow: 0 0 8px var(--glitch);
   animation: glitch 1.5s infinite;
 }
 
 /* Menu */
 
 nav {
-  background-color: #161614;
+  background-color: var(--bakgrunnur);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +81,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: 0 4px 6px #eefdab;
+  box-shadow: 0 4px 6px var(--texti);
 }
 
 .logo {
@@ -89,20 +98,20 @@ nav {
 
 .menu li a {
   text-decoration: none;
-  color: #eefdab;
+  color: var(--texti);
   font-size: 18px;
   transition: color 0.3s, text-shadow 0.3s;
-  font-family: "changeling-neo", sans-serif;
+  font-family: var(--heading);
 }
 
 .menu li a:hover {
-  color: #d0ff00;
+  color: var(--glitch);
   animation: glitch 1s infinite;
 }
 .menu li a.active {
-  color: #d0ff00;
+  color: var(--glitch);
   font-weight: bold;
-  text-shadow: 0 0 8px #d0ff00;
+  text-shadow: 0 0 8px var(--glitch);
   animation: glitch 1.5s infinite;
 }
 .burger {
@@ -120,25 +129,25 @@ nav {
 .burger .line {
   width: 30px;
   height: 3px;
-  background-color: #eefdab;
+  background-color: var(--texti);
   margin: 5px 0;
   transition: 0.3s;
 }
 @keyframes glitch {
   0% {
-    text-shadow: 2px 0 #d0ff00, -2px 0 #eefdab;
+    text-shadow: 2px 0 var(--glitch), -2px 0 var(--texti);
   }
   20% {
-    text-shadow: -2px 0 #d0ff00, 2px 0 #eefdab;
+    text-shadow: -2px 0 var(--glitch), 2px 0 var(--texti);
   }
   40% {
-    text-shadow: 2px 2px #eefdab, -2px -2px #d0ff00;
+    text-shadow: 2px 2px var(--texti), -2px -2px var(--glitch);
   }
   60% {
-    text-shadow: 1px -1px #d0ff00, -1px 1px #eefdab;
+    text-shadow: 1px -1px var(--glitch), -1px 1px var(--texti);
   }
   80% {
-    text-shadow: 0 0 6px #d0ff00;
+    text-shadow: 0 0 6px var(--glitch);
   }
   100% {
     text-shadow: none;
@@ -159,7 +168,7 @@ main {
 }
 
 .portfolio {
-  font-family: "changeling-neo", sans-serif;
+  font-family: var(--heading);
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
@@ -184,7 +193,7 @@ main {
   margin: 0 auto;
 }
 .api {
-  font-family: "changeling-neo", sans-serif;
+  font-family: var(--heading);
   font-weight: 400;
   font-style: normal;
   font-size: 2.1rem;
@@ -205,7 +214,7 @@ main {
   font-size: 3.2rem;
 }
 .hjemme {
-  font-family: "changeling-neo", sans-serif;
+  font-family: var(--heading);
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
@@ -246,12 +255,12 @@ main {
 
   nav.active .menu {
     display: block;
-    background-color: #161614;
+    background-color: var(--bakgrunnur);
     position: absolute;
     top: 94px;
     left: 0;
     width: 100%;
-    box-shadow: 0 10px 10px #eefdab;
+    box-shadow: 0 10px 10px var(--texti);
     z-index: 1;
   }
 
@@ -270,27 +279,27 @@ main {
   }
 
   h1 {
-    font-family: "changeling-neo", sans-serif;
+    font-family: var(--heading);
     font-weight: 700;
     font-size: 2.9rem;
     font-style: normal;
-    color: #eefdab;
+    color: var(--texti);
     line-height: 0.8;
   }
   h2 {
-    font-family: "changeling-neo", sans-serif;
+    font-family: var(--heading);
     font-weight: 400;
     font-style: normal;
     font-size: 1.9rem;
-    color: #eefdab;
+    color: var(--texti);
     line-height: 1;
   }
   h3 {
-    font-family: "changeling-neo", sans-serif;
+    font-family: var(--heading);
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
-    color: #eefdab;
+    color: var(--texti);
     line-height: 1;
   }
   .paddi {
@@ -304,7 +313,7 @@ main {
     margin: 0 auto;
   }
   .api {
-    font-family: "changeling-neo", sans-serif;
+    font-family: var(--heading);
     font-weight: 400;
     font-style: normal;
     font-size: 2.2rem;
@@ -323,7 +332,7 @@ main {
     margin: 20px;
   }
   .api2 {
-    font-family: "changeling-neo", sans-serif;
+    font-family: var(--heading);
     font-weight: 400;
     font-style: normal;
     font-size: 2.2rem;

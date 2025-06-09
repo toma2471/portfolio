@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --bakgrunnur: #161614;
+  --texti: #eefdab;
+  --glitch: #d0ff00;
+
+  --heading: "changeling-neo", sans-serif;
+  --body: "space-mono", monospace;
+}
 img {
   display: block;
   margin-left: auto;
@@ -42,12 +50,12 @@ img {
 
 .card {
   position: relative;
-  background-color: #eefdab;
-  color: #161614;
+  background-color: var(--texti);
+  color: var(--bakgrunnur);
   overflow: hidden;
   border-radius: 8px;
   text-decoration: none;
-  font-family: "changeling-neo", sans-serif;
+  font-family: var(--heading);
 }
 
 .card img {
@@ -56,14 +64,14 @@ img {
   aspect-ratio: 4/3;
   object-fit: cover;
   display: block;
-  border-bottom: 3px solid #161614;
+  border-bottom: 3px solid var(--bakgrunnur);
 }
 
 .card h2 {
   font-size: 2.5rem;
   margin: 0.5rem 1rem 0;
-  font-family: "changeling-neo", sans-serif;
-  color: #161614;
+  font-family: var(--heading);
+  color: var(--bakgrunnur);
 }
 
 .temapads {
@@ -138,17 +146,6 @@ img {
   gap: 15px;
 }
 
-.uppi3 {
-  display: flex;
-  flex-direction: column;
-  line-height: 0;
-}
-.myndirlofi {
-  display: flex;
-  margin-left: 35px;
-  gap: 15px;
-}
-
 .elemynd {
   margin-left: 800px;
 }
@@ -170,7 +167,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
 }
 
 .lottie dotlottie-player {
@@ -180,23 +176,23 @@ img {
 }
 
 footer {
-  background-color: #161614;
-  color: #eefdab;
+  background-color: var(--bakgrunnur);
+  color: var(--texti);
   padding: 2rem 1rem;
   text-align: center;
-  border-top: 1px solid #eefdab;
-  font-family: "changeling-neo", sans-serif;
+  border-top: 1px solid var(--texti);
+  font-family: var(--heading);
   font-size: 0.9rem;
 }
 
 footer a {
-  color: #eefdab;
+  color: var(--texti);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 footer a:hover {
-  color: #d0ff00;
+  color: var(--glitch);
   animation: glitch 1s infinite;
 }
 
