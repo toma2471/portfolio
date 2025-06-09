@@ -87,27 +87,30 @@ img {
 /* MYNDIR HREYFAST */
 
 .hreyfimyndir {
-  width: 89rem;
   overflow: hidden;
+  width: 100%;
   position: relative;
-  white-space: nowrap;
 }
 
 .myndirh {
   display: flex;
-  animation: markee-animation 3s linear infinite;
-}
-.myndirh {
-  width: 241px;
-  flex-shrink: 0;
+  width: max-content;
+  animation: scroll-loop 20s linear infinite;
 }
 
-@keyframes markee-animation {
+.myndirh img {
+  height: 250px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+@keyframes scroll-loop {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 /* VERKEFNA SIDUR */
@@ -163,15 +166,16 @@ img {
 }
 
 .lottie {
+  grid-column: 1 / -1;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
-  width: 100%;
 }
 
-.lottie lottie-player {
-  width: 250px;
+.lottie dotlottie-player {
+  width: 200px;
+  height: auto;
   max-width: 100%;
 }
 
@@ -212,30 +216,8 @@ footer a:hover {
     padding: 2rem;
   }
   /* MYNDIR HREYFAST */
-
-  .hreyfimyndir {
-    width: 28rem;
-    overflow: hidden;
-    position: relative;
-    white-space: nowrap;
-  }
-
-  .myndirh {
-    display: flex;
-    animation: markee-animation 3s linear infinite;
-  }
-  .myndirh {
-    width: 241px;
-    flex-shrink: 0;
-  }
-
-  @keyframes markee-animation {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  .myndirh img {
+    height: 150px;
   }
   /* MOBILE */
   .slideshow img {
