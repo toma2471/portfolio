@@ -43,6 +43,22 @@ p {
   color: #eefdab;
   font-size: 1rem;
 }
+a {
+  font-family: "space-mono", mono;
+  font-weight: 400;
+  font-style: normal;
+  color: #eefdab;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d0ff00;
+  font-weight: bold;
+  text-shadow: 0 0 8px #d0ff00;
+  animation: glitch 1.5s infinite;
+}
+
 /* Menu */
 
 nav {
@@ -198,7 +214,7 @@ main {
 .nafn {
   display: flex;
   align-items: baseline;
-  margin-top: 50px;
+
   margin-bottom: 50px;
   margin-left: 2px;
   font-size: 3.2rem;
