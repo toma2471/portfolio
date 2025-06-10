@@ -84,7 +84,7 @@ img {
   gap: 2rem;
   justify-content: center;
   align-items: stretch;
-  padding: 2rem 1rem;
+
   flex-wrap: wrap; /* makes them stack on mobile */
 }
 

@@ -173,8 +173,18 @@ main {
 }
 /* om mig */
 .textiommig {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   line-height: 1.5;
-  margin-right: 45px;
+  padding-right: 2rem;
+}
+.textiommig a:hover {
+  color: var(--accent);
+  font-weight: bold;
+  text-shadow: 0 0 8px var(--accent);
+  animation: glitch 1.5s infinite;
+  align-self: start;
 }
 
 /* VERKEFNA SÍDUR */
